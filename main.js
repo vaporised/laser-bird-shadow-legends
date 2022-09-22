@@ -1,6 +1,7 @@
 const {
   app,
-  BrowserWindow
+  BrowserWindow,
+  ipcMain
 } = require( 'electron' );
 const electronLocalshortcut = require( 'electron-localshortcut' );
 
@@ -17,7 +18,8 @@ function createWindow() {
     show: false, // Initially invisible while window loads
     icon: "assets/images/favicon.ico",
     webPreferences: {
-      nodeIntegration: true
+      nodeIntegration: true,
+      contextIsolation: false
     }
   } );
 
@@ -51,7 +53,7 @@ function createWindow() {
 // Creates window when electron is ready
 app.whenReady().then( createWindow );
 
-// Quit everything when window is closed
-app.on( 'window-all-closed', () => {
+// Quits app when receiving quit signal
+ipcMain.handle('quit-app', () => {
   app.quit();
-} );
+});

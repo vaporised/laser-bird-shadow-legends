@@ -1,3 +1,5 @@
+const { ipcRenderer } = require('electron');
+
 class ExitConfirm extends Phaser.Scene {
   /**
    * A confirmation screen that allows the player to
@@ -146,7 +148,7 @@ class ExitConfirm extends Phaser.Scene {
             this.scene.run( 'gameMenu' );
           } else if ( this.from == 'gameMenu' ) {
             // Closes game
-            w.close();
+            ipcRenderer.invoke('quit-app');
           }
           break;
         case 2: // No

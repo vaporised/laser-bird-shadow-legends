@@ -1,6 +1,3 @@
-const remote = require( 'electron' ).remote;
-var w = remote.getCurrentWindow();
-
 class Boot extends Phaser.Scene {
   /**
    * Loads all assets to be used in the game.
