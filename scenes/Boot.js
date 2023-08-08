@@ -432,11 +432,32 @@ class Boot extends Phaser.Scene {
     this.load.image( "tilesheet32", "assets/spritesheets/tileset32.png" );
 
     // JSON File
-    this.load.json( "info", "info.json" );
+    if (fs.existsSync("./info.json")) {
+      this.load.json( "info", "info.json" );
+    } else {
+      this.makeNewJSON()
+    }
   }
 
   update() {
     // Spins image around
     this.image.rotation += 0.01;
+  }
+
+  makeNewJSON() {
+    let json = JSON.stringify({
+      "bestRun": {
+        "score": 0,
+        "time": "00:00:00"
+      },
+      "totalRuns": 0,
+      "options": {
+        "music": 50,
+        "sfx": 50,
+        "unknown": 0
+      }
+    })
+    fs.writeFile("info.json", json, (err) => err && console.error(err));
+    this.load.json("info", "info.json");
   }
 }
