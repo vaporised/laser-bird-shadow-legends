@@ -14,10 +14,9 @@
   },
   "dependencies": {
     "electron-localshortcut": "^3.2.1",
-    "jshint": "^2.11.1",
-    "phaser-raycaster": "^0.8.0"
+    "phaser-raycaster": "^0.10.7"
   },
   "devDependencies": {
-    "electron": "^20.2.0"
+    "electron": "^25.4.0"
   }
 }

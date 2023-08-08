@@ -19,7 +19,7 @@ function createWindow() {
     icon: "assets/images/favicon.ico",
     webPreferences: {
       nodeIntegration: true,
-      contextIsolation: false
+      contextIsolation: false,
     }
   } );
 
@@ -53,7 +53,12 @@ function createWindow() {
 // Creates window when electron is ready
 app.whenReady().then( createWindow );
 
-// Quits app when receiving quit signal
+// Quit everything when window is closed
+app.on( 'window-all-closed', () => {
+  app.quit();
+} );
+
+// Quit when escape is pressed
 ipcMain.handle('quit-app', () => {
   app.quit();
-});
+})

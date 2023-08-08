@@ -1,3 +1,5 @@
+const { ipcRenderer } = require("electron");
+
 class Splash extends Phaser.Scene {
   /**
    * Splash screen.
@@ -103,6 +105,8 @@ class Splash extends Phaser.Scene {
    * Closes window when 'escape' is pressed.
    */
   quitGame() {
-    this.keyEscape.once( 'down', () => w.close() );
-  }
+    this.keyEscape.once( 'down', () => {
+      ipcRenderer.invoke("quit-app");
+    } );
+    }
 }

@@ -15,9 +15,9 @@ class EnergyBall extends Phaser.Physics.Arcade.Sprite {
     this.body.immovable = true;
 
     // Variables
-    this.speed = 1000;
+    this.speed = 300;
     this.rotateSpeed = 1000;
-    this.tolerance = 100;
+    this.tolerance = 2;
     this.collided = false;
 
     // Wall collider

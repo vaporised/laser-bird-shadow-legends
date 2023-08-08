@@ -34,11 +34,11 @@ class CatDemon extends Phaser.GameObjects.Sprite {
     this.alive = true;
     this.beenHurt = false;
     this.randMoveSpeed = 20;
-    this.chaseSpeed = 150;
+    this.chaseSpeed = 80;
     this.rayCollisionRange = 100;
     this.canSeePlayer = false;
     this.takenKB = 7;
-    this.canPlayChaseSound = false;
+    this.playedSound = false;
 
     // Ray
     this.ray = this.scene.raycaster.createRay( {
@@ -52,9 +52,6 @@ class CatDemon extends Phaser.GameObjects.Sprite {
     this.ray.setCollisionRange( this.rayCollisionRange );
     this.ray.castCircle();
     this.rayOverlapper = this.scene.physics.add.overlap( this.ray, [ this.scene.player, this.scene.player.hitbox ], () => {
-      if ( !this.chasing ) {
-        this.canPlayChaseSound = true;
-      }
       this.canSeePlayer = true;
     }, this.ray.processOverlap.bind( this.ray ) ); // Sets this.canSeePlayer to true if its circle ray intersects with the player
 
@@ -87,8 +84,6 @@ class CatDemon extends Phaser.GameObjects.Sprite {
     }
 
     super.preUpdate( time, delta );
-    // this.canSeePlayer = false;
-    this.canPlayChaseSound = false;
   }
 
   update() {
@@ -148,12 +143,13 @@ class CatDemon extends Phaser.GameObjects.Sprite {
       this.randMoving = false;
       this.scene.physics.moveToObject( this, this.scene.player, this.chaseSpeed );
       this.anims.play( 'catDemon_run', true );
+
+      if (!this.playedSound) {
+        this.scene.scene.get( 'audio' ).playSFX( 'catDemon_chase' );
+        this.playedSound = true;
+      }
     } else {
       this.chasing = false;
-    }
-
-    if ( this.canPlayChaseSound ) { // Plays a sound effect if the cat just started chasing the player
-      this.scene.scene.get( 'audio' ).playSFX( 'catDemon_chase' );
     }
   }
 

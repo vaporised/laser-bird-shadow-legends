@@ -1,12 +1,12 @@
 {
   "bestRun": {
-    "score": 1298,
-    "time": "00:00:56"
+    "score": 6036,
+    "time": "00:01:13"
   },
-  "totalRuns": 22,
+  "totalRuns": 59,
   "options": {
-    "music": 18,
-    "sfx": 24,
-    "unknown": 67
+    "music": 0,
+    "sfx": 50,
+    "unknown": 0
   }
 }
