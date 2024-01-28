@@ -4,7 +4,7 @@
 
 ![image](https://github.com/vaporised/laser-bird-shadow-legends/assets/86297267/e0c3de43-cb8b-40a0-9076-33ea6f5408e0)
 
-You are Syntax, a magnificent bird sporting a striking hairdo. You have the incredible power to shoot lasers out of your own beak! Syntax is trapped in a crumbling dungeon deep in a mysterious dimension, covered in layers of moss and in a disrepair from generations of neglect. Various animals that once lived in this forest paradise have been mutated into shadowy beasts that would not want anything more than to have some delicious poultry for their dinner, and you happen to be the only bird nearby! If you manage to get past the endless legions of shadow monsters, you will find the most terrifying of creatures waiting with nets and a in the deepest, darkest reaches of the dungeon. How far will you get before you fall victim to the terrors of this hostile world?
+You are Syntax, a magnificent bird sporting a striking hairdo. You have the incredible power to shoot lasers out of your own beak! Syntax is trapped in a crumbling dungeon deep in a mysterious dimension, covered in layers of moss and in a disrepair from generations of neglect. Various animals that once lived in this forest paradise have been mutated into shadowy beasts that would not want anything more than to have some delicious poultry for their dinner, and you happen to be the only bird nearby! If you manage to get past the endless legions of shadow monsters, you will find the most terrifying of creatures waiting with nets and a thirst for feathers in the deepest, darkest reaches of the dungeon. How far will you get before you fall victim to the terrors of this hostile world?
 ## Getting Started
 
 ### Prerequisites
