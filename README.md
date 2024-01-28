@@ -25,6 +25,9 @@ You are Syntax, a magnificent bird sporting a striking hairdo. You have the incr
    npm start
    ```
 
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjBvbzN4ejFpZTI2bDgwc2ptcnd2NTVuZXl3NXlxMWVjeHVmbjVkeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NURuxKDHqDY51W2TnT/source.gif" />
+</p>
 
 ## How To Play
 ### Controls
@@ -51,7 +54,9 @@ Contrary to popular belief, the beasts in this world are not as dreadful as one 
   
   Curious feathers that resemble those of Syntax’s are sometimes dropped by enemies. Perhaps there were other visitors to this world before? In any case, Syntax can pick these up and use them to destroy all enemy projectiles in the room, by pressing the Q key.
 
-![image](https://github.com/vaporised/laser-bird-shadow-legends/assets/86297267/6c85439a-1c42-44c4-875a-4aee48c85946)
+<p align="center">
+  <img src="https://github.com/vaporised/laser-bird-shadow-legends/assets/86297267/6c85439a-1c42-44c4-875a-4aee48c85946" />
+</p>
 
 ### Enemies
 
@@ -72,12 +77,15 @@ Contrary to popular belief, the beasts in this world are not as dreadful as one 
 
 ### Boss
 In every stage of the dungeon, Syntax will find the Crazy Bird Lady, a maniacal girl with an eternal obsession with all things feathered. Crazy Bird Lady dreams of having a bird in her house and occupying herself by watching it all day. How did she find herself in these ruins with Syntax? She does not know, but she could not be happier to be in the presence of a bird, and she will do anything in her power to capture Syntax. She will spawn Good Drawings and nets to capture you, while chasing you around. Crazy Bird Lady falls to desperation easily and may spontaneously start to use stronger attacks in a frenzied attempt to make you hers forever. Even if you manage to wear her out, she refuses to be beat down and will follow you through every floor of the dungeon, growing in power. Stay alert! 
-![image](https://github.com/vaporised/laser-bird-shadow-legends/assets/86297267/290d8d9f-5269-496e-a8da-a10691d8e5ad)
+
+<p align="center">
+  <img src="https://github.com/vaporised/laser-bird-shadow-legends/assets/86297267/290d8d9f-5269-496e-a8da-a10691d8e5ad" />
+</p>
 
 ### Aim
 Syntax gains points through various means, but he can also lose a fair amount if you are not careful. How many points can you rack up before your end?
 The details of your best run will be stored by the game and displayed on the title screen next to a polished trophy for you to flaunt. 
 
-
-![image](https://github.com/vaporised/laser-bird-shadow-legends/assets/86297267/a3be2457-2986-440c-93b5-31727b1fb275)
-
+<p align="center">
+  <img src="https://github.com/vaporised/laser-bird-shadow-legends/assets/86297267/a3be2457-2986-440c-93b5-31727b1fb275" />
+</p>
