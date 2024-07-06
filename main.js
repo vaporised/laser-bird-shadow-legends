@@ -28,7 +28,7 @@ function createWindow() {
 
   // Remove toolbar 
   win.removeMenu();
-  win.openDevTools();
+  // win.openDevTools();
 
   // Toggles fullscreen when 'F' is pressed
   electronLocalshortcut.register( win, 'F', () => {
